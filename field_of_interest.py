@@ -8,8 +8,8 @@ def rectangle_selection():
 	# take a screenshot
 
 	image = pg.screenshot()
-	img = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
-	cv2.imwrite("to_memory.png", imutils.resize(img, 800, 600))
+	image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+	cv2.imwrite("to_memory.png", image)
 	image = cv2.imread("to_memory.png")
 
 	# define rectangle area
